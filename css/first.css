@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 body {
-  background: #A0CBA4;
+  background: #dddddd;
   font-family: 'Lobster', cursive;
 }
 .circle {
@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: #D5E2D6;
+  color: #dddddd;
   text-align: center;
   line-height: 50px;
   -moz-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
@@ -18,8 +18,6 @@ h1 {
   -o-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
   -ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
   transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
-  /*-----------------------*/
-  text-shadow: 1px 1px #4A744D, 2px 2px #4A744D, 3px 3px #4A744D, 4px 4px #4A744D, 5px 5px #4A744D, 6px 6px #4A744D, 7px 7px #4A744D, 8px 8px #4A744D, 9px 9px #4A744D, 10px 10px #4A744D, 11px 11px #4A744D, 12px 12px #4A744D, 13px 13px #4A744D, 14px 14px #4A744D, 15px 15px #4A744D, 16px 16px #4A744D, 17px 17px #4A744D, 18px 18px #4A744D, 19px 19px #4A744D, 20px 20px #4A744D, 21px 21px #4A744D, 22px 22px #4A744D, 23px 23px #4A744D, 24px 24px #4A744D, 25px 25px #4A744D, 26px 26px 6px #06520C;
 
 }
 
@@ -29,4 +27,49 @@ span:nth-child(3), span:nth-child(7) {
 
 span:nth-child(1), span:nth-child(9), span:nth-child(5)  {
   font-size: 110px;
+}
+
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Titan One', cursive;
+  font-size: 80px;
+  color: #226E92;
+  text-shadow: 0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 transparent,
+  0 7px 0 transparent,
+  0 8px 0 transparent,
+  0 9px 0 transparent,
+  0 10px 10px rgba(0, 0, 0, .4);
+}
+
+h1 span:nth-child(2) { animation-delay: .1s; }
+h1 span:nth-child(3) { animation-delay: .2s; }
+h1 span:nth-child(4) { animation-delay: .3s; }
+h1 span:nth-child(5) { animation-delay: .4s; }
+h1 span:nth-child(6) { animation-delay: .5s; }
+h1 span:nth-child(7) { animation-delay: .6s; }
+h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+    0 2px 0 #CCC,
+    0 3px 0 #CCC,
+    0 4px 0 #CCC,
+    0 5px 0 #CCC,
+    0 6px 0 #CCC,
+    0 7px 0 #CCC,
+    0 8px 0 #CCC,
+    0 9px 0 #CCC,
+    0 50px 25px rgba(0, 0, 0, .2);
+  }
 }
