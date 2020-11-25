@@ -65,7 +65,7 @@ body{
     color: cadetblue;
 }
 .profile-contents{
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Nanum Gothic Coding', monospace;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -82,7 +82,7 @@ body{
 }
 .profile-contents p{
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     min-width: 60px;
     max-height: 0;
     overflow: hidden;
