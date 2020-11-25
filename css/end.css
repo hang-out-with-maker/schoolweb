@@ -1,0 +1,10 @@
+body{
+    background-color: #dddddd;
+    margin: 0;
+}
+
+p{
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
